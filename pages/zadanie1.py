@@ -7,8 +7,14 @@ import texts as text
 import codes as code
 
 # Constants
-DATA_PATH = Path("/home/nawbart/repos/RESERVED/data/taxi_dane.xlsx")
+# DATA_PATH = Path("/home/nawbart/repos/RESERVED/data/taxi_dane.xlsx")
 
+# # Katalog, w którym znajduje się plik
+DATA_DIR = Path.cwd() / "data"
+# Nazwa pliku
+DATA_FILENAME = "taxi_dane.xlsx"
+# Pełna ścieżka do pliku
+DATA_PATH = DATA_DIR / DATA_FILENAME
 
 # Funkcja do wyświetlania nagłówka aplikacji
 def display_header():
